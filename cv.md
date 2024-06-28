@@ -1,4 +1,4 @@
-![/assets/image/my_photo.jpg]
+![my photo](/assets/image/my_photo.jpg)
 # name: **Maria Chernigovskaya**
 ## contact:
 * phone: **89130624101**
@@ -30,6 +30,7 @@ actions: {
 * [link to the project Django](https://github.com/Chernigovskaya/1657-1655)
 ## education:
 * 09/2022 - 02/2024  - GeekBrains school Frontend-developer   
-## language: english A2
+## language: 
+english A2   
 
 
