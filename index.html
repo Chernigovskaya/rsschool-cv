@@ -1,36 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cv</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>name: Maria Chernigovskaya</h1>
-    <img src="assets/image/my_photo.jpg" alt="my_photo">
-    <ul>contact:
-        <li>phone: 89130624101</li>
-        <li>address: Novosibirsk</li>
-        <li>email: maria292009@yandex.ru</li>
-    </ul>
-    <h2>about me:</h2>
-    <p>Previously she worked as a construction engineer. I've been interested in programming for about two years. Completed a frontend developer course. It wasn't easy. I want to improve my knowledge and realize myself in this.</p>
-    <ul>skill:
-        <li>Git</li>
-        <li>Ubuntu</li>
-        <li>Python (Django)</li>
-        <li>JS</li>
-        <li>HTML/CSS</li>
-        <li>Vue3.js</li>
-    </ul>
-    <h2>experience:</h2>
-    <p>I only have educational experience</p>
-    <li><a href="https://github.com/Chernigovskaya/diplom">link to the project Vue.js</a></li>
-    <li><a href="https://github.com/Chernigovskaya/1657-1655">link to the project Django</a></li>
-    <h2>education:</h2>
-    <li>09/2022 - 02/2024 - GeekBrains school Frontend-developer</li>
-    <h2>language:</h2>
-    <p>english A2</p>
+    <header class="header container">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#summary" class="nav-link">Summary</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#language" class="nav-link">Language</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main container">
+        <section class="section" id="profile">
+            <h1 class="profile-title">Maria Chernigovskaya</h1>
+            <div class="profile-info">
+                <img src="assets/image/my_photo.jpg" alt="my_photo" width="30%" />
+                <ul class="info-ul" id="contacts">
+                    Contacts:
+                    <li class="info-li">Phone: 89130624101</li>
+                    <li class="info-li">Address: Novosibirsk</li>
+                    <li class="info-li">Email: maria292009@yandex.ru</li>
+                    <li class="info-li">GitHub: @Chernigovskaya</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section" id="summary">
+            <h2 class="title">Summary:</h2>
+            <p class="text">
+                Previously she worked as a construction engineer. I've been interested
+                in programming for about two years. Completed a frontend developer
+                course. It wasn't easy. I want to improve my knowledge and realize
+                myself in this.
+            </p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="title">Skills:</h2>
+            <ul class="info-ul">
+                
+                <li class="info-li">Git</li>
+                <li class="info-li">Ubuntu</li>
+                <li class="info-li">Python (Django)</li>
+                <li class="info-li">JS</li>
+                <li class="info-li">HTML/CSS</li>
+                <li class="info-li">Vue3.js</li>
+            </ul>
+        </section>
+        <section class="section" id="code">
+            <h2 class="title">Code example:</h2>
+            <pre>
+                <code class="code">
+                    def revers_number(num):
+                        return str(num) if num < 10 else str(num % 10) + revers_number(num // 10)
+                    try:
+                        number = int(input("Введите число, которое требуется перевернуть: "))
+                    except ValueError:
+                        print("Вы вместо числа ввели строку. Исправьтесь")
+                    print(f'Перевернутое число: {revers_number(number)}')
+            </code>
+            </pre>
+        </section>
+        <section class="section" id="projects">
+            <h2 class="title">Projects:</h2>
+            <ul class="text">
+                I only have educational experience
+                <li class="info-li info-projects">
+                    <a href="https://github.com/Chernigovskaya/diplom">link to the project Vue.js</a>
+                </li>
+                <li class="info-li info-projects">
+                    <a href="https://github.com/Chernigovskaya/1657-1655">link to the project Django</a>
+                </li>
+            </ul>
+        </section>
+        <section class="section" id="education">
+            <h2 class="title">Education:</h2>
+            <ul>
+                <li class="info-li">
+                    09/2022 - 02/2024 - GeekBrains school Frontend-developer
+                </li>
+            </ul>
+        </section>
+        <section class="section" id="language">
+            <h2 class="title">Language:</h2>
+            <ul>
+                <li class="text">English A2</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer container">
+        <a class="footer-img"  href="https://rs.school/courses/javascript-ru">
+            <img  src="assets/image/rs_school_js.svg" alt="logo" width="150px">
+        </a>
+    </footer>
 </body>
+
 </html>

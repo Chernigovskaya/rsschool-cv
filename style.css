@@ -2,11 +2,101 @@
     font-family: "Inter";
     src: url(assets/fonts/Inter/static/Inter-Medium.ttf);
 }
-@font-face {
-    font-family: "Inter-Bold";
-    src: url(assets/fonts/Inter/static/Inter-Bold.ttf);
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(123, 56, 211);
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.main {
+    background-color: rgb(250, 240, 225);
+}
+
+.header {
+    width: 100%;
+    background-color: chocolate;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    padding: 28px 20px;
+}
+
+.nav-link {
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.profile-title {
+    font-size: 48px;
+    text-align: center;
+}
+
+.profile-info {
+    display: flex;
+    gap: 48px;
+}
+
+.info-ul {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.info-li {
+    font-size: 24px;
+    padding: 8px 0;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 36px;
+    margin: 8px 3%;
+}
+
+.text {
+    font-size: 22px;
+    padding: 0 2%;
+}
+.code {
+    font-size: 16px;
+}
+.footer {
+    background-color: chocolate;
+    width: 100%;
+    padding: 2% 0;
+}
+.footer-img{
+display: flex;
+justify-content: center;
 }
