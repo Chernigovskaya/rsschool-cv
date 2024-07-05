@@ -68,11 +68,6 @@ body {
     gap: 48px;
 }
 
-.info-ul {
-    font-size: 36px;
-    font-weight: 700;
-}
-
 .info-li {
     font-size: 24px;
     padding: 8px 0;
@@ -99,4 +94,5 @@ body {
 .footer-img{
 display: flex;
 justify-content: center;
+
 }

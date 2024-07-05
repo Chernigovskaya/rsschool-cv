@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -38,14 +38,17 @@
         <section class="section" id="profile">
             <h1 class="profile-title">Maria Chernigovskaya</h1>
             <div class="profile-info">
-                <img src="assets/image/my_photo.jpg" alt="my_photo" width="30%" />
-                <ul class="info-ul" id="contacts">
-                    Contacts:
+                <img src="assets/image/my_photo.jpg" alt="my_photo">
+                <div class="profile-box">
+                    <h2 class="title" id="contacts">Contacts:</h2>
+                <ul>
                     <li class="info-li">Phone: 89130624101</li>
                     <li class="info-li">Address: Novosibirsk</li>
                     <li class="info-li">Email: maria292009@yandex.ru</li>
                     <li class="info-li">GitHub: @Chernigovskaya</li>
                 </ul>
+                </div>
+                
             </div>
         </section>
         <section class="section" id="summary">
@@ -60,7 +63,6 @@
         <section class="section" id="skills">
             <h2 class="title">Skills:</h2>
             <ul class="info-ul">
-                
                 <li class="info-li">Git</li>
                 <li class="info-li">Ubuntu</li>
                 <li class="info-li">Python (Django)</li>
@@ -74,19 +76,19 @@
             <pre>
                 <code class="code">
                     def revers_number(num):
-                        return str(num) if num < 10 else str(num % 10) + revers_number(num // 10)
+                        return str(num) if num &lt; 10 else str(num % 10) + revers_number(num // 10)
                     try:
                         number = int(input("Введите число, которое требуется перевернуть: "))
                     except ValueError:
                         print("Вы вместо числа ввели строку. Исправьтесь")
                     print(f'Перевернутое число: {revers_number(number)}')
-            </code>
+             </code>
             </pre>
         </section>
         <section class="section" id="projects">
             <h2 class="title">Projects:</h2>
-            <ul class="text">
-                I only have educational experience
+            <p class="text">I only have educational experience</p>
+            <ul>
                 <li class="info-li info-projects">
                     <a href="https://github.com/Chernigovskaya/diplom">link to the project Vue.js</a>
                 </li>
@@ -111,8 +113,8 @@
         </section>
     </main>
     <footer class="footer container">
-        <a class="footer-img"  href="https://rs.school/courses/javascript-ru">
-            <img  src="assets/image/rs_school_js.svg" alt="logo" width="150px">
+        <a class="footer-img" href="https://rs.school/courses/javascript-ru">
+            <img src="assets/image/rs_school_js.svg" alt="logo" width="150">
         </a>
     </footer>
 </body>
